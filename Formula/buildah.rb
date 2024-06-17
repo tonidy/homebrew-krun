@@ -7,7 +7,7 @@ class Buildah < Formula
 
   bottle do
     root_url "https://raw.githubusercontent.com/you54f/homebrew-krun/master/bottles" 
-    sha256 cellar: :any, arm64_sonoma: "c2dd61b3d31576c71001eae1b7cabd7e714bdef8dd7b84d8d59496f26810840d"
+    sha256 cellar: :any, arm64_sonoma: "5a7745bd51facf354df5f8ca9706d9a52106c24936e60ae7655a32e8a81633d3"
   end
 
   depends_on "go" => :build

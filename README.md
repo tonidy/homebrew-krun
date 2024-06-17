@@ -4,7 +4,7 @@ This is a Homebrew repository for a fork of [you54f/krunvm](https://github.com/y
 
 ## Supported platforms
 
-The formulae and bottles on this repository only support Apple Silicon-based devices (M1 family).
+The formulae and bottles on this repository only support Sonoma Apple Silicon-based devices (M1 family).
 
 ## How do I install these formulae?
 
@@ -32,7 +32,7 @@ brew bottle buildah
 3. run `./build_on_krunvm.sh`
 4. `rm -rf linux-* tarballs .git libkrunfw*.dylib libkrunfw.so.*`
 5. Archive the libkrunfw folder
-   1. `tar -czvf v3.13.0-with_macos_prebuilts.tar.gz libkrunfw-3.13.0`
+   1. `tar -czvf v4.10.0-with_macos_prebuilts.tar.gz libkrunfw-4.10.0`
 6. Upload to GH release
 7. Update homebrew formula to reference new prebuilt kernel
 
@@ -46,13 +46,14 @@ brew bottle libkrunfw
 
 ```sh
 cd ..
-git clone git@github.com:tonidy/libkrun.git
+git clone https://github.com/containers/libkrun.git
 cd libkrun
+# Edit `fedora` to `docker.io/fedora`
 ./build_on_krunvm.sh
 make
-DYLD_LIBRARY_PATH=$PWD/../homebrew-krun/bottles/libkrunfw/3.11.0/lib ./build_on_krunvm.sh
+DYLD_LIBRARY_PATH=$PWD/../homebrew-krun/bottles/libkrunfw/4.1.0/lib ./build_on_krunvm.sh
 make
-tar -czvf v1.6.0-with_macos_prebuilts.tar.gz libkrun-1.6.0
+tar -czvf v1.9.2-with_macos_prebuilts.tar.gz libkrun-1.9.2
 # Upload to GH release
 brew install --formula Formula/libkrun.rb --build-bottle
 ```
