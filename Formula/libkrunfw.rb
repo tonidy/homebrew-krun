@@ -1,13 +1,13 @@
 class Libkrunfw < Formula
   desc "Dynamic library bundling a Linux kernel in a convenient storage format"
   homepage "https://github.com/tonidy/libkrunfw"
-  url "https://github.com/tonidy/libkrunfw/releases/tag/v4.1.0"
-  sha256 "9e2841d64a048403876a9bce960c20a7f840ed937773273a0cda337c2519d4f9"
+  url "https://github.com/tonidy/libkrunfw/releases/download/v4.1.0/v4.1.0-with_macos_prebuilts.tar.gz"
+  sha256 "75120318f4615e1d4a8d53092062282b875443d75e0a7565df8a64f118dddafc"
   license all_of: ["GPL-2.0-only", "LGPL-2.1-only"]
 
   bottle do
     root_url "https://raw.githubusercontent.com/tonidy/homebrew-krun/master/bottles"
-    sha256 cellar: :any, arm64_sonoma: "4508a8b4995411311a5f8a5907dc12ba129dbf235ab2f79cea64b6307338e3e3"
+    sha256 cellar: :any, arm64_sonoma: "aad24831c461c7409f4ac0d5633176d1193eb670b494169f6d905e66faf23529"
   end
 
   # libkrun, our only consumer, only supports Hypervisor.framework on arm64

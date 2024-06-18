@@ -29,6 +29,7 @@ brew bottle buildah
 
 1. clone libkrunfw
 2. install krunvm (you need it to build the kernel)
+# Edit `fedora` to `docker.io/fedora`
 3. run `./build_on_krunvm.sh`
 4. `rm -rf linux-* tarballs .git libkrunfw*.dylib libkrunfw.so.*`
 5. Archive the libkrunfw folder
