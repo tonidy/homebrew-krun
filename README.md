@@ -57,6 +57,8 @@ make
 tar -czvf v1.9.2-with_macos_prebuilts.tar.gz libkrun-1.9.2
 # Upload to GH release
 brew install --formula Formula/libkrun.rb --build-bottle
+cp Formula/libkrun.rb /opt/homebrew/Library/Taps/tonidy/homebrew-krun/Formula/libkrun.rb
+brew bottle libkrun
 ```
 
 
@@ -64,5 +66,6 @@ brew install --formula Formula/libkrun.rb --build-bottle
 
 ```sh
 brew install --formula Formula/krunvm.rb --build-bottle
+cp Formula/krunvm.rb /opt/homebrew/Library/Taps/tonidy/homebrew-krun/Formula/krunvm.rb
 brew bottle krunvm
 ```
