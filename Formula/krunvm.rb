@@ -1,13 +1,13 @@
 class Krunvm < Formula
   desc "Manage lightweight VMs created from OCI images"
   homepage "https://github.com/tonidy/krunvm"
-  url "https://github.com/tonidy/krunvm/archive/refs/tags/v0.4.0.tar.gz"
-  sha256 "c600d35f330820d015818482b3c6311f94fbe63a340d03c5c7ff938cbf2e5bc4"
+  url "https://github.com/tonidy/krunvm/archive/refs/tags/v0.4.1.tar.gz"
+  sha256 "9361fe4b67b864394f6c0e2e42e8d1f8fdd374c5cab9c60fe6b583fb6a5a031f"
   license "Apache-2.0"
 
   bottle do
     root_url "https://raw.githubusercontent.com/tonidy/homebrew-krun/master/bottles"
-    sha256 cellar: :any, arm64_sonoma: "79a2e9b229c46f44bfd98e416b654d95f832f28801bd0c92738414c8c94c9863"
+    sha256 cellar: :any, arm64_sonoma: "05ba8d56e77f6c589afeec923bb4d80d1ccea764766daa877efa2750c3847a7e"
   end
 
   depends_on "asciidoctor" => :build
